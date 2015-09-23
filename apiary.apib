@@ -3,6 +3,7 @@ FORMAT: 1A
 # Netshoes and Zattini new API
 
 ## Zattini Feature Products [/featureProducts]
+#####Home Zattini
 
 ### List All Products [GET]
 
@@ -602,6 +603,86 @@ FORMAT: 1A
           },
           "isSuccess": true
         }
+        
+## Netshoes Home [/HomeMobile]
+
+### Logout [GET]
+
++ Response 200 (application/json)
+
+        {
+          "message": "success",
+          "isSuccess": true,
+          "exception": "",
+          "value": {
+            "anonymous": true,
+            "name": null,
+            "recommendations": [
+              {
+                "label": "Os Mais Vendidos",
+                "products": [
+                  {
+                    "image": {
+                      "large": "//static5.netshoes.net/Produtos/mochila-nike-mog-bolt/06/004-7473-006/004-7473-006_detalhe1.jpg"
+                    },
+                    "url": "/produto/mochila-nike-mog-bolt-004-7473-006",
+                    "price": {
+                      "original_price": "R$ 349,90",
+                      "saving": "R$ 86,78",
+                      "payment_condition": "10x de R$ 26,31",
+                      "actual_price": "R$ 263,12"
+                    },
+                    "name": "Mochila Nike Mog Bolt",
+                    "stamps": [
+                      {
+                        "id": "9",
+                        "label": "Personalize"
+                      }
+                    ],
+                    "badge": {
+                      "strength": "",
+                      "value": "-25%"
+                    }
+                  },
+                  {
+                    "image": {
+                      "large": "//static5.netshoes.net/Produtos/mochila-nike-cheyenne-pursuit-30/12/004-7776-012/004-7776-012_detalhe1.jpg"
+                    },
+                    "url": "/produto/mochila-nike-cheyenne-pursuit-30-004-7776-012",
+                    "price": {
+                      "original_price": "R$ 299,90",
+                      "saving": "R$ 88,79",
+                      "payment_condition": "8x de R$ 26,39",
+                      "actual_price": "R$ 211,11"
+                    },
+                    "name": "Mochila Nike Cheyenne Pursuit 3.0",
+                    "stamps": [
+                      {
+                        "id": "9",
+                        "label": "Personalize"
+                      }
+                    ],
+                    "badge": {
+                      "strength": "",
+                      "value": "-30%"
+                    }
+                  }
+                ]
+              }
+            ],
+            "banners": [
+              {
+                "image": "http://static1.netshoes.net/resources/netshoes/banners/full/mobile/full_1mobile_android_150612_1024.jpg",
+                "url": null
+              },
+              {
+                "image": "http://static1.netshoes.net/resources/netshoes/banners/full/mobile/full2_150910_app.jpg",
+                "url": "/artigos-esportivos/promoagosto?Nr=sku.lancamento:0"
+              }
+            ]
+          }
+        }
+        
         
 ## Generic Product Lists [/productsList]
 #####Json Response for products list, i.e: search result list, departments list, subdepartments list.
@@ -2504,7 +2585,8 @@ FORMAT: 1A
               }
             ]
           }
-        }        
+        }
+
 ## Generic Logout [/logout]
 
 ### Logout [GET]
