@@ -96,48 +96,509 @@ FORMAT: 1A
           }
         }
 
-### Create a New Question [POST]
 
-You may create your own question using this action. It takes a JSON
-object containing a question and a collection of answers in the
-form of choices.
+## Generic PDP for Zattini and Netshoes [/pdp]
 
-+ Request (application/json)
+### Return PDP [GET]
+
++ Response 200 (application/json)
 
         {
-            "question": "Favourite programming language?",
-            "choices": [
-                "Swift",
-                "Python",
-                "Objective-C",
-                "Ruby"
-            ]
-        }
-
-+ Response 201 (application/json)
-
-    + Headers
-
-            Location: /questions/2
-
-    + Body
-
-            {
-                "question": "Favourite programming language?",
-                "published_at": "2015-08-05T08:40:51.620Z",
-                "choices": [
-                    {
-                        "choice": "Swift",
-                        "votes": 0
-                    }, {
-                        "choice": "Python",
-                        "votes": 0
-                    }, {
-                        "choice": "Objective-C",
-                        "votes": 0
-                    }, {
-                        "choice": "Ruby",
-                        "votes": 0
+          "message": "success",
+          "exception": "",
+          "value": {
+            "superDiscountEndDate": null,
+            "isPresale": false,
+            "liquidPixelAvailability": false,
+            "base_sku": "H25-0073-074",
+            "download": null,
+            "oneclick": false,
+            "id": "H25-0073",
+            "shipping": "Frete Grátis",
+            "remaining": "",
+            "details": [
+              {
+                "similarResults": "733",
+                "value": "Night e Balada",
+                "label": "Ocasião",
+                "similarSearch": "/jsonSearch/?N=4294821564+4294965463"
+              },
+              {
+                "similarResults": "1271",
+                "value": "Lisa",
+                "label": "Estilo da Peça",
+                "similarSearch": "/jsonSearch/?N=4294822079+4294965463"
+              },
+              {
+                "similarResults": "1011",
+                "value": "Sintético",
+                "label": "Material",
+                "similarSearch": "/jsonSearch/?N=4294813584+4294965463"
+              },
+              {
+                "similarResults": "313",
+                "value": "Meia Pata",
+                "label": "Tipo de Salto",
+                "similarSearch": "/jsonSearch/?N=4294821624+4294965463"
+              }
+            ],
+            "description": "Para evidenciar as produções femininas com um ar ousado e moderno, a Sandália Walkabout Meia Pata é ideal. Propondo conforto e estilo aos pés, as tiras cruzadas dão maior segurança a cada passo.",
+            "name": "Sandália Walkabout Meia Pata",
+            "hostName": "atg-prd-ativo-nsps06-priv-vip",
+            "stamps": [
+              {
+                "label": "2 por R$159,90"
+              }
+            ],
+            "banner": null,
+            "shippingMessage": null,
+            "gallery": [
+              {
+                "items": [
+                  {
+                    "zoom": "//static5.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_zoom1.jpg",
+                    "normal": "//static4.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_janela.jpg",
+                    "thumb": "//static4.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_thumb1.jpg",
+                    "small": "//static4.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_thumb1.jpg",
+                    "large": "//static5.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_detalhe1.jpg",
+                    "medium": "//static1.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_vitrine.jpg"
+                  },
+                  {
+                    "zoom": "//static5.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_zoom2.jpg",
+                    "normal": "//static4.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_janela.jpg",
+                    "thumb": "//static4.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_thumb2.jpg",
+                    "small": "//static4.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_thumb2.jpg",
+                    "large": "//static5.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_detalhe2.jpg",
+                    "medium": "//static1.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_vitrine.jpg"
+                  },
+                  {
+                    "zoom": "//static5.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_zoom3.jpg",
+                    "normal": "//static4.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_janela.jpg",
+                    "thumb": "//static4.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_thumb3.jpg",
+                    "small": "//static4.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_thumb3.jpg",
+                    "large": "//static5.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_detalhe3.jpg",
+                    "medium": "//static1.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_vitrine.jpg"
+                  },
+                  {
+                    "zoom": "//static5.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_zoom4.jpg",
+                    "normal": "//static4.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_janela.jpg",
+                    "thumb": "//static4.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_thumb4.jpg",
+                    "small": "//static4.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_thumb4.jpg",
+                    "large": "//static5.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_detalhe4.jpg",
+                    "medium": "//static1.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_vitrine.jpg"
+                  },
+                  {
+                    "zoom": "//static5.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_zoom5.jpg",
+                    "normal": "//static4.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_janela.jpg",
+                    "thumb": "//static4.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_thumb5.jpg",
+                    "small": "//static4.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_thumb5.jpg",
+                    "large": "//static5.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_detalhe5.jpg",
+                    "medium": "//static1.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_vitrine.jpg"
+                  },
+                  {
+                    "zoom": "//static5.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_zoom6.jpg",
+                    "normal": "//static4.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_janela.jpg",
+                    "thumb": "//static4.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_thumb6.jpg",
+                    "small": "//static4.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_thumb6.jpg",
+                    "large": "//static5.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_detalhe6.jpg",
+                    "medium": "//static1.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_vitrine.jpg"
+                  }
+                ],
+                "type": 1
+              }
+            ],
+            "characteristics": [
+              {
+                "name": "Nome",
+                "value": "Sandália Walkabout Meia Pata"
+              },
+              {
+                "name": "Gênero",
+                "value": "Feminino"
+              },
+              {
+                "name": "Indicado para",
+                "value": "Dia a Dia"
+              },
+              {
+                "name": "Ocasião",
+                "value": "Night e Balada"
+              },
+              {
+                "name": "Estilo da Peça",
+                "value": "Lisa"
+              },
+              {
+                "name": "Tira",
+                "value": "Média"
+              },
+              {
+                "name": "Material da Tira",
+                "value": "Sintético"
+              },
+              {
+                "name": "Material",
+                "value": "Sintético"
+              },
+              {
+                "name": "Tipo de Salto",
+                "value": "Meia Pata"
+              },
+              {
+                "name": "Altura do Salto",
+                "value": "Alto"
+              },
+              {
+                "name": "Altura do Salto (cm)",
+                "value": "12 cm. Meia Pata: 3 cm"
+              },
+              {
+                "name": "Solado",
+                "value": "Borracha"
+              },
+              {
+                "name": "Garantia do Fabricante",
+                "value": "Contra defeito de fabricação"
+              },
+              {
+                "name": "Origem",
+                "value": "Nacional"
+              }
+            ],
+            "sku": "H25-0073-074-39",
+            "cta": {
+              "name": "Adicionar ao carrinho",
+              "value": "1"
+            },
+            "url": "/produto/sandalia-walkabout-meia-pata-H25-0073-074",
+            "similarProductsSearch": "/jsonSearch/?N=4294821564+4294822079+4294813584+4294821624+4294821643+4294965463",
+            "price": {
+              "original_price": "",
+              "saving": "",
+              "payment_condition": "5x de R$ 25,98",
+              "actual_price": "R$ 129,90"
+            },
+            "personalization": "",
+            "hidden_fields": [
+              {
+                "selected": null,
+                "name": "productId",
+                "value": "H25-0073"
+              },
+              {
+                "selected": null,
+                "name": "skuId",
+                "value": "H25-0073-074-39"
+              },
+              {
+                "selected": null,
+                "name": "skuCode",
+                "value": "H25-0073-074-39"
+              },
+              {
+                "selected": null,
+                "name": "ais",
+                "value": "false"
+              },
+              {
+                "selected": null,
+                "name": "mobile",
+                "value": "false"
+              }
+            ],
+            "recommendations": [
+              {
+                "label": "ACABOU DE CHEGAR",
+                "products": [
+                  {
+                    "image": {
+                      "large": "//static2.netshoes.net/Produtos/tenis-jorge-bischoff-cadarco/05/E02-0299-205/E02-0299-205_detalhe1.jpg"
+                    },
+                    "url": "/produto/tenis-jorge-bischoff-cadarco-E02-0299-205",
+                    "price": {
+                      "original_price": "",
+                      "saving": "",
+                      "payment_condition": "10x de R$ 39,99",
+                      "actual_price": "R$ 399,90"
+                    },
+                    "name": "Tênis Jorge Bischoff Cadarço",
+                    "stamps": [
+                      {
+                        "id": "6",
+                        "label": "Novidade"
+                      }
+                    ]
+                  },
+                  {
+                    "image": {
+                      "large": "//static2.netshoes.net/Produtos/tenis-jorge-bischoff-cadarco/05/E02-0299-205/E02-0299-205_detalhe1.jpg"
+                    },
+                    "url": "/produto/tenis-jorge-bischoff-cadarco-E02-0299-205",
+                    "price": {
+                      "original_price": "",
+                      "saving": "",
+                      "payment_condition": "10x de R$ 39,99",
+                      "actual_price": "R$ 399,90"
+                    },
+                    "name": "Tênis Jorge Bischoff Cadarço",
+                    "stamps": [
+                      {
+                        "id": "6",
+                        "label": "Novidade"
+                      }
+                    ],
+                    "badge": {
+                      "strength": "",
+                      "value": "-25%"
                     }
+                  }
                 ]
-            }
+              },
+              {
+                "label": "PARA ANDAR NA MODA",
+                "products": [
+                  {
+                    "image": {
+                      "large": "//static5.netshoes.net/Produtos/sandalia-walkabout-meia-pata/09/H25-0074-209/H25-0074-209_detalhe1.jpg"
+                    },
+                    "url": "/produto/sandalia-walkabout-meia-pata-H25-0074-209",
+                    "price": {
+                      "original_price": "",
+                      "saving": "",
+                      "payment_condition": "5x de R$ 25,98",
+                      "actual_price": "R$ 129,90"
+                    },
+                    "name": "Sandália Walkabout Meia Pata",
+                    "stamps": [
+                      {
+                        "label": "2 por R$159,90"
+                      }
+                    ],
+                    "badge": {
+                      "strength": "",
+                      "value": "-25%"
+                    }
+                  }
+                ]
+              }
+            ],
+            "badge": null,
+            "attributes": [
+              {
+                "hideList": false,
+                "items": [
+                  {
+                    "id": "color-59",
+                    "selected": true,
+                    "color": [
+                      "#fffc9b"
+                    ],
+                    "name": "color",
+                    "value": "59",
+                    "image": {
+                      "zoom": "//static5.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_zoom.jpg",
+                      "normal": "//static4.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_janela.jpg",
+                      "small": "//static1.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_vitrine.jpg",
+                      "thumb": "//static4.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_thumb1.jpg",
+                      "large": "//static5.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_detalhe1.jpg",
+                      "medium": "//static1.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_vitrine.jpg"
+                    },
+                    "label": "Amarelo Claro",
+                    "available": true,
+                    "url": "/produto/sandalia-walkabout-meia-pata-H25-0073-074"
+                  },
+                  {
+                    "id": "color-1043430",
+                    "selected": false,
+                    "color": [
+                      "#AE5719"
+                    ],
+                    "name": "color",
+                    "value": "1043430",
+                    "image": {
+                      "zoom": "//static1.netshoes.net/Produtos/sandalia-walkabout-meia-pata/38/H25-0073-338/H25-0073-338_zoom.jpg",
+                      "normal": "//static3.netshoes.net/Produtos/sandalia-walkabout-meia-pata/38/H25-0073-338/H25-0073-338_janela.jpg",
+                      "small": "//static1.netshoes.net/Produtos/sandalia-walkabout-meia-pata/38/H25-0073-338/H25-0073-338_vitrine.jpg",
+                      "thumb": "//static3.netshoes.net/Produtos/sandalia-walkabout-meia-pata/38/H25-0073-338/H25-0073-338_thumb1.jpg",
+                      "large": "//static5.netshoes.net/Produtos/sandalia-walkabout-meia-pata/38/H25-0073-338/H25-0073-338_detalhe1.jpg",
+                      "medium": "//static1.netshoes.net/Produtos/sandalia-walkabout-meia-pata/38/H25-0073-338/H25-0073-338_vitrine.jpg"
+                    },
+                    "label": "Caramelo",
+                    "available": false,
+                    "url": "/produto/sandalia-walkabout-meia-pata-H25-0073-338"
+                  },
+                  {
+                    "id": "color-6",
+                    "selected": false,
+                    "color": [
+                      "#000000"
+                    ],
+                    "name": "color",
+                    "value": "6",
+                    "image": {
+                      "zoom": "//static4.netshoes.net/Produtos/sandalia-walkabout-meia-pata/19/H25-0073-219/H25-0073-219_zoom.jpg",
+                      "normal": "//static4.netshoes.net/Produtos/sandalia-walkabout-meia-pata/19/H25-0073-219/H25-0073-219_janela.jpg",
+                      "small": "//static1.netshoes.net/Produtos/sandalia-walkabout-meia-pata/19/H25-0073-219/H25-0073-219_vitrine.jpg",
+                      "thumb": "//static4.netshoes.net/Produtos/sandalia-walkabout-meia-pata/19/H25-0073-219/H25-0073-219_thumb1.jpg",
+                      "large": "//static5.netshoes.net/Produtos/sandalia-walkabout-meia-pata/19/H25-0073-219/H25-0073-219_detalhe1.jpg",
+                      "medium": "//static1.netshoes.net/Produtos/sandalia-walkabout-meia-pata/19/H25-0073-219/H25-0073-219_vitrine.jpg"
+                    },
+                    "label": "Preto",
+                    "available": false,
+                    "url": "/produto/sandalia-walkabout-meia-pata-H25-0073-219"
+                  },
+                  {
+                    "id": "color-416",
+                    "selected": false,
+                    "color": [
+                      "#ef037f"
+                    ],
+                    "name": "color",
+                    "value": "416",
+                    "image": {
+                      "zoom": "//static1.netshoes.net/Produtos/sandalia-walkabout-meia-pata/30/H25-0073-030/H25-0073-030_zoom.jpg",
+                      "normal": "//static5.netshoes.net/Produtos/sandalia-walkabout-meia-pata/30/H25-0073-030/H25-0073-030_janela.jpg",
+                      "small": "//static1.netshoes.net/Produtos/sandalia-walkabout-meia-pata/30/H25-0073-030/H25-0073-030_vitrine.jpg",
+                      "thumb": "//static5.netshoes.net/Produtos/sandalia-walkabout-meia-pata/30/H25-0073-030/H25-0073-030_thumb1.jpg",
+                      "large": "//static5.netshoes.net/Produtos/sandalia-walkabout-meia-pata/30/H25-0073-030/H25-0073-030_detalhe1.jpg",
+                      "medium": "//static1.netshoes.net/Produtos/sandalia-walkabout-meia-pata/30/H25-0073-030/H25-0073-030_vitrine.jpg"
+                    },
+                    "label": "Rosa Escuro",
+                    "available": true,
+                    "url": "/produto/sandalia-walkabout-meia-pata-H25-0073-030"
+                  }
+                ],
+                "label": "Cor",
+                "type": 1
+              },
+              {
+                "hideList": false,
+                "items": [
+                  {
+                    "id": "size-37",
+                    "selected": false,
+                    "name": "size",
+                    "value": "37",
+                    "image": {
+                      "zoom": "//static5.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_zoom.jpg",
+                      "normal": "//static4.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_janela.jpg",
+                      "small": "//static1.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_vitrine.jpg",
+                      "thumb": "//static4.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_thumb1.jpg",
+                      "large": "//static5.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_detalhe1.jpg",
+                      "medium": "//static1.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_vitrine.jpg"
+                    },
+                    "label": "33",
+                    "available": false,
+                    "url": "/produto/sandalia-walkabout-meia-pata-H25-0073-074"
+                  },
+                  {
+                    "id": "size-13",
+                    "selected": false,
+                    "name": "size",
+                    "value": "13",
+                    "image": {
+                      "zoom": "//static5.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_zoom.jpg",
+                      "normal": "//static4.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_janela.jpg",
+                      "small": "//static1.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_vitrine.jpg",
+                      "thumb": "//static4.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_thumb1.jpg",
+                      "large": "//static5.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_detalhe1.jpg",
+                      "medium": "//static1.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_vitrine.jpg"
+                    },
+                    "label": "34",
+                    "available": true,
+                    "url": "/produto/sandalia-walkabout-meia-pata-H25-0073-074"
+                  },
+                  {
+                    "id": "size-27",
+                    "selected": false,
+                    "name": "size",
+                    "value": "27",
+                    "image": {
+                      "zoom": "//static5.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_zoom.jpg",
+                      "normal": "//static4.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_janela.jpg",
+                      "small": "//static1.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_vitrine.jpg",
+                      "thumb": "//static4.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_thumb1.jpg",
+                      "large": "//static5.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_detalhe1.jpg",
+                      "medium": "//static1.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_vitrine.jpg"
+                    },
+                    "label": "35",
+                    "available": true,
+                    "url": "/produto/sandalia-walkabout-meia-pata-H25-0073-074"
+                  },
+                  {
+                    "id": "size-23",
+                    "selected": false,
+                    "name": "size",
+                    "value": "23",
+                    "image": {
+                      "zoom": "//static5.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_zoom.jpg",
+                      "normal": "//static4.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_janela.jpg",
+                      "small": "//static1.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_vitrine.jpg",
+                      "thumb": "//static4.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_thumb1.jpg",
+                      "large": "//static5.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_detalhe1.jpg",
+                      "medium": "//static1.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_vitrine.jpg"
+                    },
+                    "label": "36",
+                    "available": true,
+                    "url": "/produto/sandalia-walkabout-meia-pata-H25-0073-074"
+                  },
+                  {
+                    "id": "size-5",
+                    "selected": false,
+                    "name": "size",
+                    "value": "5",
+                    "image": {
+                      "zoom": "//static5.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_zoom.jpg",
+                      "normal": "//static4.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_janela.jpg",
+                      "small": "//static1.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_vitrine.jpg",
+                      "thumb": "//static4.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_thumb1.jpg",
+                      "large": "//static5.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_detalhe1.jpg",
+                      "medium": "//static1.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_vitrine.jpg"
+                    },
+                    "label": "37",
+                    "available": true,
+                    "url": "/produto/sandalia-walkabout-meia-pata-H25-0073-074"
+                  },
+                  {
+                    "id": "size-9",
+                    "selected": false,
+                    "name": "size",
+                    "value": "9",
+                    "image": {
+                      "zoom": "//static5.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_zoom.jpg",
+                      "normal": "//static4.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_janela.jpg",
+                      "small": "//static1.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_vitrine.jpg",
+                      "thumb": "//static4.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_thumb1.jpg",
+                      "large": "//static5.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_detalhe1.jpg",
+                      "medium": "//static1.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_vitrine.jpg"
+                    },
+                    "label": "38",
+                    "available": true,
+                    "url": "/produto/sandalia-walkabout-meia-pata-H25-0073-074"
+                  },
+                  {
+                    "id": "size-7",
+                    "selected": false,
+                    "name": "size",
+                    "value": "7",
+                    "image": {
+                      "zoom": "//static5.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_zoom.jpg",
+                      "normal": "//static4.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_janela.jpg",
+                      "small": "//static1.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_vitrine.jpg",
+                      "thumb": "//static4.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_thumb1.jpg",
+                      "large": "//static5.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_detalhe1.jpg",
+                      "medium": "//static1.netshoes.net/Produtos/sandalia-walkabout-meia-pata/74/H25-0073-074/H25-0073-074_vitrine.jpg"
+                    },
+                    "label": "39",
+                    "available": true,
+                    "url": "/produto/sandalia-walkabout-meia-pata-H25-0073-074"
+                  }
+                ],
+                "label": "Tamanho",
+                "type": 2
+              }
+            ],
+            "rating": null
+          },
+          "isSuccess": true
+        }
